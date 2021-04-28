@@ -1,9 +1,3 @@
-// test('', () => {
-//   const input = ;
-//   const output = (input);
-//   expect(output).toEqual();
-// });
-
 import { fiveAndGreaterOnly, evensOnly, fiveCharactersOrFewerOnly, peopleWhoBelongToTheIlluminati, ofAge } from './array-filter';
 
 test('Five and greater only', () => {
