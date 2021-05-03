@@ -24,8 +24,8 @@ test('getArrayOfKeysAndValues', () => {
   expect(output).toEqual([['name', 'Angelina Jolie'], ['age', 80]]); //assert
 });
 
-// test('sortedArraysByValuesLength', () => {
-//   const dataObject = { name: 'Bob', friend: 'Tom Hanks', location: 'Los Angeles' }; //arrange
-//   const output = sortedArraysByValuesLength(dataObject); //act
-//   expect(output).toEqual([['location', 'Los Angeles'], ['friend', 'Tom Hanks'], ['name', 'Bob']]); //assert
-// });
+test('sortedArraysByValuesLength', () => {
+  const dataObject = { name: 'Bob', friend: 'Tom Hanks', location: 'Los Angeles' }; //arrange
+  const output = sortedArraysByValuesLength(dataObject); //act
+  expect(output).toEqual([['location', 'Los Angeles'], ['friend', 'Tom Hanks'], ['name', 'Bob']]); //assert
+});

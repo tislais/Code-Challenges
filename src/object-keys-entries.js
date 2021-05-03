@@ -21,7 +21,7 @@ export function getArrayOfKeysAndValues(obj) {
   return Object.entries(obj).map(([key, value]) => ([key, value]));
 }
 
-// export function sortedArraysByValuesLength(obj) {
-//   const array = Object.entries(obj).map(([key, value]) => ([key, value]));
-//   console.log(array.sort((a, b) => a.length - b.length));
-// }
+export function sortedArraysByValuesLength(obj) {
+  const array = Object.entries(obj).map(([key, value]) => ([key, value]));
+  return array.sort((a, b) => b[1].length - a[1].length);
+}
