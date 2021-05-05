@@ -8,14 +8,37 @@ export function updateNumbers(obj) {
   return array;
 }
 
-// export function houseSize() {
+export function houseSize(arr) {
+  const array = [];
+  const childrenArray = [];
+  arr.forEach(n => {
+    array.push(n.name);
+    if (n.spouse) {
+      array.push(n.spouse);
+    }
+    if (n.children) {
+      n.children.forEach(m => childrenArray.push(m));
+    }
+  });
+  return array.length + childrenArray.length;
+}
 
-// }
+export function hasChildrenEntries(arr, character) {
+  let hasChildren = false;
+  arr.forEach(n => {
+    if (n.name === character) {
+      //if (n.children.length > 0) {
 
-// export function hasChildrenEntries() {
+      // this assignment makes me angry because I can't figure out how to use .entries without making some huge statement like below when i could just do it small like the commented line above :(
 
-// }
+      if (Object.values(Object.entries(n)[2])[1].length > 0) {
+        hasChildren = true;
+      }
+    }
+  });
+  return hasChildren;
+}
 
-// export function sortByChildren() {
+export function sortByChildren() {
 
-// }
+}

@@ -1,4 +1,4 @@
-import { getHouses, updateNumbers } from './more-object-keys-entries.js';
+import { getHouses, updateNumbers, houseSize, hasChildrenEntries } from './more-object-keys-entries.js';
 
 const characters = [
   {
@@ -69,17 +69,19 @@ test('it returns an array of transformed key value pairs into strings', () => {
   
 });
 
-// test('it gets the names of the houses', () => {
-//    //arrange
-//   const output = getHouses(characters); //act
-//   expect(output).toEqual(['Greyjoy', 'Snow', 'Arryn', 'Tyrell', 'Lannister', 'Targaryen', 'Stark']); //assert
-// });
+test('it will return the total number of characters in the data array', () => {
+  
+  const output = houseSize(characters); 
+  expect(output).toEqual(26); 
+});
 
-// test('it gets the names of the houses', () => {
-//    //arrange
-//   const output = getHouses(characters); //act
-//   expect(output).toEqual(['Greyjoy', 'Snow', 'Arryn', 'Tyrell', 'Lannister', 'Targaryen', 'Stark']); //assert
-// });
+test('it will check if the character has children then return a boolean value of either true or false', () => {
+  
+  const output = hasChildrenEntries(characters, 'Eddard');
+  expect(output).toEqual(true);
+  const output2 = hasChildrenEntries(characters, 'Euron');
+  expect(output2).toEqual(false);
+});
 
 // test('it gets the names of the houses', () => {
 //    //arrange
