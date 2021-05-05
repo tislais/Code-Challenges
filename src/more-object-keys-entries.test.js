@@ -47,7 +47,7 @@ const characters = [
 
 test('it gets the names of the houses', () => {
   const output = getHouses(characters); //act
-  expect(output).toEqual(['Greyjoy', 'Snow', 'Arryn', 'Tyrell', 'Lannister', 'Targaryen', 'Stark']); //assert
+  expect(output).toEqual(expect.arrayContaining(['Greyjoy', 'Snow', 'Arryn', 'Tyrell', 'Lannister', 'Targaryen', 'Stark']));
 });
 
 // test('it gets the names of the houses', () => {

@@ -1,7 +1,5 @@
-
-
-export function getHouses() {
-
+export function getHouses(arr) {
+  return arr.map(n => n.house);
 }
 
 // export function updateNumbers() {
