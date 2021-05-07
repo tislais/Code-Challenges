@@ -1,6 +1,10 @@
 
-export function howMuchPencil(arr) {
-
+export function howMuchPencil(str) {
+  const array = [];
+  for (let i = 0; i <= str.length; i++) {
+    array.push(str.substring(i, str.length));
+  }
+  return array;
 };
 
 export function listFoods(arr) {
