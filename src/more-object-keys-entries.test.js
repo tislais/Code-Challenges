@@ -1,4 +1,4 @@
-import { getHouses, updateNumbers, houseSize, hasChildrenEntries } from './more-object-keys-entries.js';
+import { getHouses, updateNumbers, houseSize, hasChildrenEntries, sortByChildren } from './more-object-keys-entries.js';
 
 const characters = [
   {
@@ -85,6 +85,6 @@ test('it will check if the character has children then return a boolean value of
 
 // test('it gets the names of the houses', () => {
 //    //arrange
-//   const output = getHouses(characters); //act
-//   expect(output).toEqual(['Greyjoy', 'Snow', 'Arryn', 'Tyrell', 'Lannister', 'Targaryen', 'Stark']); //assert
+//   const output = sortByChildren(characters); //act
+//   expect(output).toEqual([{ name: 'Euron', spouse: null, children: [], house: 'Greyjoy' }, { name: 'Jon S.', spouse: null, children: [], house: 'Snow' }, { name: 'Jon A.', spouse: 'Lysa', children: ['Robin'], house: 'Arryn' }, { name: 'Mace', spouse: 'Alerie', children: ['Margaery', 'Loras'], house: 'Tyrell' }, { name: 'Cersei', spouse: 'Robert', children: ['Joffrey', 'Myrcella', 'Tommen'], house: 'Lannister' }, { name: 'Daenarys', spouse: 'Khal Drogo', children: ['Drogon', 'Rhaegal', 'Viserion'], house: 'Targaryen' }, { name: 'Eddard', spouse: 'Catelyn', children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'], house: 'Stark' }]); //assert
 // });
