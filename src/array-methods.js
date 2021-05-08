@@ -15,12 +15,11 @@ export function listFoods(obj) {
   return obj.ingredients.map(str => str.split(' ').slice(2).join(' '));
 };
 
-export function removeLastCharacters(arr) {
-
+export function stepActions(obj) {
+  return obj.steps.map(str => str.split(' ').slice(0, 1).join(' '));
 };
 
-export function stepActions(arr) {
-
+export function removeLastCharacters(obj) {
 };
 
 export function totalSumCSV(arr) {
