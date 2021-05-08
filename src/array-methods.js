@@ -7,10 +7,8 @@ export function howMuchPencil(str) {
 
 export function wordsToCharList(str) {
   const array = [];
-  for (let i = 0; i < str.length; i++) {
-    array.push(str.slice(i));
-  }
-  console.log(array);
+  [...str].forEach(char => array.push(char));
+  return array;
 };
 
 export function listFoods(arr) {
