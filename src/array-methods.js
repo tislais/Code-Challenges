@@ -12,11 +12,7 @@ export function wordsToCharList(str) {
 };
 
 export function listFoods(obj) {
-  const array = [];
-  obj.ingredients.map(str => array.push(
-    str.split(' ').slice(2).join(' '))
-  );
-  return array;
+  return obj.ingredients.map(str => str.split(' ').slice(2).join(' '));
 };
 
 export function removeLastCharacters(arr) {
