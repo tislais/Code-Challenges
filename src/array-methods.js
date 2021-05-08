@@ -19,7 +19,8 @@ export function stepActions(obj) {
   return obj.steps.map(str => str.split(' ').slice(0, 1).join(' '));
 };
 
-export function removeLastCharacters(obj) {
+export function removeLastCharacters(str, num) {
+  return str.slice(0, str.length - num);
 };
 
 export function totalSumCSV(arr) {
