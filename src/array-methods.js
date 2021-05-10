@@ -23,14 +23,14 @@ export function removeLastCharacters(str, num) {
   return str.slice(0, str.length - num);
 };
 
-export function totalSumCSV(str) {
-  return str.split(',').map(number => Number(number)).reduce((a, b) => a + b, 0);
-};
+// export function totalSumCSV(str) {
+//   return str.split(',').map(number => Number(number)).reduce((a, b) => a + b, 0);
+// };
 
-export function removeVowels(arr) {
+// export function removeVowels(arr) {
 
-};
+// };
 
-export function extractVowels(arr) {
+// export function extractVowels(arr) {
 
-}
+// }
