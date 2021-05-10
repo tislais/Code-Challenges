@@ -52,7 +52,7 @@ test('stepActions should return array of actions for each step', () => {
   expect(stepActions(gruffaloCrumble)).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake']);
 });
 
-test.only('removeLastCharacters', () => {
+test('removeLastCharacters', () => {
   expect(removeLastCharacters('Gregor', 2)).toStrictEqual('Greg');
   expect(removeLastCharacters('hello', -1)).toStrictEqual('hello');
   expect(removeLastCharacters('wowow', -700)).toStrictEqual('wowow');
@@ -62,7 +62,7 @@ test.only('removeLastCharacters', () => {
 });
 
 // stretch goals
-test('totalSumCSV', () => {
+test.only('totalSumCSV', () => {
   expect(totalSumCSV('1,4,5,7,2')).toStrictEqual(19);
   expect(totalSumCSV('147')).toStrictEqual(147);
 });
