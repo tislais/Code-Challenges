@@ -1,11 +1,11 @@
 import { returnTen, findMax, totalSum, grandTotal, salesData } from './code-challenge-11.js';
 
-test.only('returnTen should return the last 10 characters of a string as an array', () => {
+test('returnTen should return the last 10 characters of a string as an array', () => {
   expect(returnTen('hello world')).toStrictEqual(['e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']);
   expect(returnTen('world')).toStrictEqual(['w', 'o', 'r', 'l', 'd']);
 });
 
-test('findMax takes in a matrix of positive numbers and returns the number with the highest value', () => {
+test.only('findMax takes in a matrix of positive numbers and returns the number with the highest value', () => {
   expect(findMax([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(24);
 });
 

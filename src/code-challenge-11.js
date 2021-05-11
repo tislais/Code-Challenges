@@ -3,7 +3,7 @@ export function returnTen(str) {
 }
 
 export function findMax(matrix) {
-    
+  return [].concat(...matrix).sort(function(a, b) { return b - a; })[0];
 }
 
 export function totalSum(matrix) {
