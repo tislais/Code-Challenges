@@ -10,10 +10,14 @@ export function totalSum(matrix) {
   return [].concat(...matrix).reduce((a, b) => a + b, 0);
 }
 
-export function grandTotal(stores) {
+// export function grandTotal(stores) {
+//   const arr = [];
+//   stores.forEach(function(value, index) {
+//   });
+//   console.log(stores);
+//   console.log(arr);
+// }
 
-}
-
-export function salesData(hours, data) {
+// export function salesData(hours, data) {
   
-}
+// }
