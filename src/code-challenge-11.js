@@ -7,7 +7,7 @@ export function findMax(matrix) {
 }
 
 export function totalSum(matrix) {
-    
+  return [].concat(...matrix).reduce((a, b) => a + b, 0);
 }
 
 export function grandTotal(stores) {
