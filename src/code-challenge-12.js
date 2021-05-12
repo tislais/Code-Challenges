@@ -5,3 +5,7 @@ export function toLastNames(people) {
 export function addValues(numbers) {
   return numbers.reduce((a, b) => a + b, 0);
 }
+
+export function addPurchases(arr) {
+  return arr.reduce((a, b) => ({ purchasePrice: a.purchasePrice + b.purchasePrice })).purchasePrice;
+}
