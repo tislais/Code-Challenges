@@ -9,3 +9,7 @@ export function addValues(numbers) {
 export function addPurchases(arr) {
   return arr.reduce((a, b) => ({ purchasePrice: a.purchasePrice + b.purchasePrice })).purchasePrice;
 }
+
+export function countNumberOfElements(arr) {
+  return arr.reduce((a) => a + 1);
+}

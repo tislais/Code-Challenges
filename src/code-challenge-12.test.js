@@ -1,4 +1,4 @@
-import { toLastNames, addValues, addPurchases } from './code-challenge-12.js';
+import { toLastNames, addValues, addPurchases, countNumberOfElements } from './code-challenge-12.js';
 
 test('should iterate over an array of people objects and creates a new list of each persons full name', () => {
   const people = [
@@ -32,4 +32,10 @@ test('should add numbers in an array', () => {
   const sum = 888;
   
   expect(addPurchases(purchases)).toEqual(sum);
+});
+
+test.only('should count number of elements in array without using .length', () => {
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const sum = 10;
+  expect(countNumberOfElements(numbers)).toEqual(sum);
 });
