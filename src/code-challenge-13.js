@@ -1,6 +1,7 @@
 
 export const sortByChildren = (charArray) => {
- 
+  const array = charArray.sort((a, b) => (a.children.length > b.children.length) ? 1 : (a.children.length === b.children.length) ? ((a.name > b.name) ? 1 : -1) : -1);
+  return array;
 };
 
 export const containsW = (str) => {
