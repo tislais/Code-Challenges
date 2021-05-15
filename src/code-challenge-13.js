@@ -13,7 +13,7 @@ export const isNum = (input) => {
 };
 
 export const containsWorld = (input) => {
-
+  return /(?:world)/.test(input);
 };
 
 export const isCapitalized = (str) => {

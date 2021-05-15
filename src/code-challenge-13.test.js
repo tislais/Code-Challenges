@@ -58,7 +58,7 @@ describe('Testing challenge 1', () => {
     expect(containsW('hello everyone')).toStrictEqual(false);
   });
 
-  test.only('It should use a regular expression pattern to return true if the input contains a number', () => {
+  test('It should use a regular expression pattern to return true if the input contains a number', () => {
     expect(isNum(1234567890)).toStrictEqual(true);
     expect(isNum('12345')).toStrictEqual(true);
     expect(isNum('h3llo w0rld')).toStrictEqual(true);
@@ -66,8 +66,10 @@ describe('Testing challenge 1', () => {
     expect(isNum('')).toStrictEqual(false);
   });
 
-  test('It should sort the characters by number of children', () => {
-    expect(containsWorld(characters)[0].name).toStrictEqual('Euron');
+  test.only('It should use a regular expression pattern to return true if the input contains the word world all in lower-case letters', () => {
+    expect(containsWorld('hello world')).toStrictEqual(true);
+    expect(containsWorld('Hello World')).toStrictEqual(false);
+    expect(containsWorld('hello everyone')).toStrictEqual(false);
   });
 
   test('It should sort the characters by number of children', () => {
