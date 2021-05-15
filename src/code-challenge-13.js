@@ -5,11 +5,11 @@ export const sortByChildren = (charArray) => {
 };
 
 export const containsW = (str) => {
-
+  return /w/.test(str);
 };
 
 export const isNum = (input) => {
-  
+  return /\d/.test(input);
 };
 
 export const containsWorld = (input) => {
