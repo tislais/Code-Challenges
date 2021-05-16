@@ -1,6 +1,7 @@
 
 export const sortByChildren = (charArray) => {
-  const array = charArray.sort((a, b) => (a.children.length > b.children.length) ? 1 : (a.children.length === b.children.length) ? ((a.name > b.name) ? 1 : -1) : -1);
+  const array = charArray.sort((a, b) => 
+    (a.children.length > b.children.length) ? 1 : (a.children.length === b.children.length) ? ((a.name > b.name) ? 1 : -1) : -1);
   return array;
 };
 
@@ -17,11 +18,14 @@ export const containsWorld = (input) => {
 };
 
 export const isCapitalized = (str) => {
-
+  return str.split(' ')
+    .filter(w => /\b[A-Z]/.test(w))
+    .map(w => w.replace(/[&/\\#,+()$~%.'":*?<>{}]/g, '')
+    );
 };
 
 export const citiesAtoJ = (arr) => {
-
+  return arr.filter(w => w.match(/^[A-J]/));
 };
 
 // stretch 
